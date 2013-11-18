@@ -1,0 +1,19 @@
+0.  The GIF format allows for 256 colors.  
+1.  The GIF format does
+2.  TODO
+3.  TODO
+4.  Two things happen. First, the system changes the first character of the filename to indicate that the file has been deleted and therefore that the directory entry can be recycled. Also, the system moves the FAT clusters to the list of free clusters - note that this does not change the data itself, it just "frees" it.
+5.  I can replace fill every address with NUL characters (or 0 in other words). This makes it so that the data itself is changed.
+6.  stdint.h is a header file to a library that contains
+7.  These indicate the size of the elements of the structure. uint8_t refers to 8 bits, uint16_t represents 16 bits, and so on.
+8.  BYTE - 2 bytes, DWORD - 8 bytes, LONG - 8 bytes, WORD - 4 bytes
+9.  0x4d42
+10. bfSize is the size of the entire BMP file, while biSize is the size of the BITMAPINFO struct
+11. If biHeight is negative, the bitmap has its start in the top-left corner.
+12. biBitCount
+13. It may return NULL if there is no remaining space for the file.
+14. The third argument retuns the number of elements being read, and we are only reading one element.
+15. 3
+16. fseek moves the "cursor" from where it currently is to a new point, or to a certain point in the file. It allows the program to read in the same line multiple times, for example.
+17. SEEK_CUR is the current position of the cursor. So offsetting by, say, -10 from Seek_CUR will move the reading point to the left of the current point by 10.
+18. Milo Banana

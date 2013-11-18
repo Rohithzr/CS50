@@ -1,0 +1,19 @@
+0.  The GIF format allows for 256 colors. JPG allows for RGB, which means that there are 2^24 different colors that JPG supports. PNG also supports 24 bit images, which means that there are again 2^24 different colors that it supports. PNG can also support 48 bit images, but these are less common. While BMP's can vary in size of bits per pixel (1, 4, 8, 15, 24, 32, or 64), the most common is the 24 bits per pixel size, which again leads to 2^24 different colors.  
+1.  The GIF format does support animation. 
+2.  Lossy compression compresses data by getting rid of "losing" some of it. Loseless compression on the other hand does not exhibit this phenomenon. The benefit of lossy compression is that it has the potential to significantly reduce file size, which makes it useful for internet applications. It is often used for images, sound, or videos as a result.
+3.  JPGs are lossy compressed.
+4.  Two things happen. First, the system changes the first character of the filename to indicate that the file has been deleted and therefore that the directory entry can be recycled. Also, the system moves the FAT clusters to the list of free clusters - note that this does not change the data itself, it just "frees" it.
+5.  I can replace fill every address with NUL characters (or 0 in other words). This makes it so that the data itself is changed.
+6.  stdint.h is a header file to a library that contains many integers types with certain widths. These are used to standarize the type of integer being read by the computer in various programs that are used in the problem set.
+7.  These indicate the size of the elements of the structure. uint8_t refers to 8 bits, uint16_t represents 16 bits, and so on. These are used to indicate what the size of the pixel in the bitmap will be.
+8.  BYTE - 1 bytes, DWORD - 4 bytes, LONG - 4 bytes, WORD - 2 bytes
+9.  0x4d42
+10. bfSize is the size of the entire BMP file, while biSize is the size of the BITMAPINFO struct
+11. If biHeight is negative, the bitmap has its start in the top-left corner.
+12. biBitCount
+13. It may return NULL if there is no remaining space for the file, or if any other issue occurs in the opening process.
+14. The third argument retuns the number of elements being read, and we are only reading one element of the specified size.
+15. 3
+16. fseek moves the "cursor" or file position from where it currently is to a new point, or to a certain point in the file. It allows the program to read in the same line multiple times, for example.
+17. SEEK_CUR is the current position of the cursor. So offsetting by, say, -10 from Seek_CUR will move the reading point to the left of the current point by 10.
+18. Milo Banana dun it.
